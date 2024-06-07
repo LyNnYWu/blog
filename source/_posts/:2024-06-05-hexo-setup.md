@@ -8,7 +8,7 @@ tags:
 - hexschool
 ---
 
-## initial hexo
+## Step1: initial hexo
 ![](https://i.imgur.com/yLVWngk.png)
 
 ## main settings of the blog
