@@ -39,4 +39,6 @@
 - 本機 `npm ci`、乾淨建置與舊文章網址檢查已通過；五篇骨架依 `12:50` 至 `12:10` 正確排序。
 - 瀏覽器已實測 1280 px 桌面版與 390 px 手機版：主副標、五篇標題、導覽均正確，無橫向溢出、破圖或前端錯誤。
 - 原 repo 留有未初始化的 `themes/landscape` gitlink，會遮蔽已安裝的 npm 主題並使乾淨建置產生無版型頁面；本輪移除該 gitlink，改由既有 `hexo-theme-landscape` npm 依賴提供主題。
-- 待本輪完成：主分支推送、乾淨 clone 端到端建置、`gh-pages` 發布、遠端 SHA 與公開網站讀回。
+- `main` 已推送並由 `git ls-remote` 回驗；另以全新 clone 執行 `npm ci`、clean、build，內容排序通過且建置後工作樹乾淨。
+- `gh-pages` 已發布，遠端 SHA `6466b3a9e1880b3fb19f364ed5d7a72c2d47cb52`；正式網址已讀回新主副標、五篇骨架、正確 OG URL 與分類入口。
+- 正式網站已再實測桌面與 390 px 手機版：文章順序正確，無橫向溢出、破圖或前端 warning／error。
