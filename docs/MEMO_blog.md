@@ -1,5 +1,14 @@
 # 個人部落格維護 memo
 
+2026-10-26：PR #1 合併與主線回驗完成
+
+Lyndon 明確同意合併本 PR。已將 main 由 fec02a3b7d028d6996145985927d6c809d731a4e 快轉至核准且獨立終審無阻擋的 5b44be640b61eba436cdc479d034a9ea2ac8f2e4，GitHub 讀回 closed／merged，遠端主線 SHA 相同；合併樹 a0b636a8da8d1fbaa252d832b34c6bf7aae9109d 與已審候選相同。
+
+合併後從 GitHub 全新 clone main，Node.js v22.23.1 實跑 npm ci --no-audit --no-fund、npm run clean、npm run build：47 檔、主標／canonical／主題 CSS、Hexo 7.3.0 與 index ^4.0.0 全部核對通過，工作樹乾淨。合併來源分支已在 SHA 租約保護下刪除並讀回不存在；原提交由 main 完整保留。
+
+本次收尾提交只更新本 memo 與 backlog，建置來源維持已驗主線。gh-pages 仍為 6466b3a9e1880b3fb19f364ed5d7a72c2d47cb52，未發布網站；既有依賴 deprecated 警告不作安全稽核完成結論。監控來源無影響。
+
+
 2026-10-26：PR #1 建置修復待合併
 
 依 Lyndon「剩下分支能修先修並驗證」指示，將最新 main fec02a3b7d028d6996145985927d6c809d731a4e 整合進既有 PR #1 分支，保留首頁索引產生器 4.0 與既有網站內容。套件與鎖檔使用 Hexo 7.3.0，補齊 package.json 的 hexo.version=7.3.0，消除 Hexo 建置時自行改寫版本欄位的問題。
