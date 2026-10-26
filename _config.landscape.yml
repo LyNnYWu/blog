@@ -1,0 +1,16 @@
+menu:
+  Home: /
+  Topics: /topics/
+  About: /about/
+  Archives: /archives/
+
+rss: false
+favicon: false
+
+widgets:
+  - category
+  - tag
+  - archive
+  - recent_posts
+
+excerpt_link: 繼續閱讀

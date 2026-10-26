@@ -3,19 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: LyNn's Blog
-subtitle: Beat Yesterday.
-description: This is a place that records my growth. 
-keywords:
-author: LyNn Y. Wu
+title: Lyndon Wu — Education, Research & Technology
+subtitle: 從教育現場、資料研究到自動化實作
+description: Lyndon Wu 的個人部落格，分享英文教學與考試設計、教育科技與自動化、研究方法、專案管理及交通安全的實務思考。
+keywords: 英文教學, 教育科技, 自動化, 研究方法, 資料分析, 專案管理, 交通安全
+author: Lyndon Wu
 language:
-- en
 - zh-tw
+- en
 timezone: Asia/Taipei
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://username.github.io/blog
+url: https://lynnywu.github.io/blog
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -33,7 +33,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: ::year-:month-:day-:title.md # File name of new posts
+new_post_name: :year-:month-:day-:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -69,6 +69,11 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  英文教學與考試設計: english-teaching-and-assessment
+  教育科技與工作流程自動化: education-technology-and-automation
+  研究方法與資料分析: research-and-data-analysis
+  專案管理與數位營運: project-management-and-digital-operations
+  交通安全、調查與證據推理: traffic-safety-and-evidence-reasoning
 tag_map:
 
 # Metadata elements
