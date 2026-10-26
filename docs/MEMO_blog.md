@@ -1,5 +1,13 @@
 # 個人部落格維護 memo
 
+2026-10-26：PR #2 合併完成
+
+Lyndon 於本次對話明確同意合併首頁索引產生器更新。PR #2 原提交 c306e4f70f8a212dcc337939769efcb869ac2b84，以 rebase 合併至 main，結果為 76bee68c41ab4464118d2c5445fda4819f651bdb，直接父提交仍為原主線 94e6ac8209680d00ee1aa5010e28b2798609452f。GitHub 已讀回 closed／merged；合併樹 e07327a21fbaf79fee488e11d3e8d9ad82b9d016 與審查時的預期整合內容相同。
+
+從 GitHub 全新 clone main 後，npm ci --no-audit --no-fund、npm run clean、npm run build 全通過；產出 47 檔，首頁主標、canonical、五篇文章入口與主題 CSS 均核對通過，建置後 git status --porcelain 為空。驗證環境 Node.js v22.23.1，符合新版套件 Node >=18 要求。套件安裝仍有既有依賴 deprecated 警告，未把本次建置通過當成全部相依套件的安全稽核。
+
+本次只合併來源與補交接；gh-pages 仍為 6466b3a9e1880b3fb19f364ed5d7a72c2d47cb52，未發布網站，未宣稱正式站已使用新版產生器。PR #1 仍待處理版本欄位與建置後工作樹變動，詳 docs/todo-backlog.md。本 repo 修改不涉及機隊監控來源。
+
 ## 定位
 
 - 主標：`Lyndon Wu — Education, Research & Technology`
